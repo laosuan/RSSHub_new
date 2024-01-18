@@ -320,6 +320,9 @@
     "/agirls/:category?": [
         "TonyRL"
     ],
+    "/agirls/topic/:topic": [
+        "TonyRL"
+    ],
     "/agirls/topic_list": [
         "TonyRL"
     ],
@@ -1791,6 +1794,9 @@
     "/docschina/jsweekly": [
         "daijinru"
     ],
+    "/dol/announce/:owner?/:province?/:office?": [
+        "itpcc"
+    ],
     "/domp4/detail/:id": [
         "savokiss"
     ],
@@ -2564,7 +2570,8 @@
         "TonyRL"
     ],
     "/google/citations/:id": [
-        "KellyHwong"
+        "KellyHwong",
+        "const7"
     ],
     "/google/doodles/:language?": [
         "xyqfer"
@@ -3219,6 +3226,9 @@
     "/hkepc/:category?": [
         "TonyRL"
     ],
+    "/hket/:category?": [
+        "TonyRL"
+    ],
     "/hkjunkcall": [
         "nczitzk"
     ],
@@ -3838,6 +3848,9 @@
         "HenryQW",
         "JimenezLi"
     ],
+    "/jiaoliudao": [
+        "TonyRL"
+    ],
     "/jiemian/account/main/:id": [
         "nczitzk"
     ],
@@ -3998,6 +4011,12 @@
     ],
     "/kunchengblog/essay": [
         "nczitzk"
+    ],
+    "/kuwaitlocal": [
+        "TonyRL"
+    ],
+    "/kuwaitlocal/:category?": [
+        "TonyRL"
     ],
     "/kyodonews/:language?/:keyword?": [
         "Rongronggg9"
@@ -5396,6 +5415,9 @@
     "/qdu/jwc": [
         "abc1763613206"
     ],
+    "/qianp/news/:path*": [
+        "TonyRL"
+    ],
     "/qianzhan/analyst/column/:type?": [
         "moke8"
     ],
@@ -5903,6 +5925,9 @@
     "/shu/jwb/:type?": [
         "tuxinghuan"
     ],
+    "/shuiguopai": [
+        "nczitzk"
+    ],
     "/sicau/dky/:category?": [
         "nczitzk"
     ],
@@ -6289,6 +6314,9 @@
     "/t66y/post/:tid": [],
     "/tableau/app/discover/viz-of-the-day": [
         "KaiyoungYu"
+    ],
+    "/taiwannews/hot/:lang?": [
+        "TonyRL"
     ],
     "/tanchinese/:category?": [],
     "/tangshufang/:category?": [
@@ -7617,6 +7645,9 @@
         "JimenezLi"
     ],
     "/zhihu/xhu/people/answers/:hexId": [
+        "JimenezLi"
+    ],
+    "/zhihu/xhu/people/posts/:hexId": [
         "JimenezLi"
     ],
     "/zhihu/xhu/question/:questionId/:sortBy?": [
