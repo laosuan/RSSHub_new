@@ -2574,6 +2574,15 @@
         source:[ "/servicesupport/analygarden/:program?",
           "/" ],
         target:"/cfachina/servicesupport/analygarden/:program?" } ] },
+  "cfmmc.com":{ _name:"中国期货市场监控中心",
+    ".":[ { title:"栏目",
+        docs:"https://docs.rsshub.app/routes/finance#zhong-guo-qi-huo-shi-chang-jian-kong-zhong-xin-lan-mu",
+        source:[ "/:id*" ],
+        target:(params) => {
+                    const id = params.id.replace(/\/index\.shtml/, '');
+
+                    return `/cfmmc${id ? `/${id}` : ''}`;
+                } } ] },
   "cgtn.com":{ _name:"中国环球电视网 CGTN",
     ".":[ { title:"播客",
         docs:"https://docs.rsshub.app/routes/traditional-media#zhong-guo-huan-qiu-dian-shi-wang",
@@ -5815,6 +5824,12 @@
         docs:"https://docs.rsshub.app/routes/government#bei-jing-shi-wei-sheng-jian-kang-wei-yuan-hui",
         source:"/xwzx_20031/:caty",
         target:"/gov/beijing/mhc/:caty" } ] },
+  "bjedu.gov.cn":{ _name:"北京市教育委员会",
+    gh:[ { title:"教育科学规划网 - 通用",
+        docs:"https://docs.rsshub.app/routes/government#bei-jing-shi-jiao-yu-ke-xue-gui-hua-wang",
+        source:[ "/ghsite/:urlPath/index.html",
+          "/ghsite/:urlPath" ],
+        target:"/gov/beijing/bjedu/gh/:urlPath" } ] },
   "bphc.com.cn":{ _name:"北京保障房中心有限公司",
     gycpt:[ { title:"北京市共有产权住房租赁服务平台",
         docs:"https://docs.rsshub.app/routes/government#bei-jing-shi-bao-zhang-fang-zhong-xin-you-xian-gong-si",
@@ -9694,6 +9709,127 @@
         docs:"https://docs.rsshub.app/routes/finance#jin-shi-shu-ju",
         source:[ "/topic/:id" ],
         target:"/jin10/topic/:id" } ] },
+  "jinse.cn":{ _name:"金色财经",
+    ".":[ { title:"首页 - 头条",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/头条" },
+      { title:"首页 - 独家",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/独家" },
+      { title:"首页 - 铭文",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/铭文" },
+      { title:"首页 - 产业",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/产业" },
+      { title:"首页 - 项目",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/项目" },
+      { title:"首页 - 政策",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/政策" },
+      { title:"首页 - AI",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/AI" },
+      { title:"首页 - Web 3.0",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/Web 3.0" },
+      { title:"首页 - 以太坊2.0",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/以太坊2.0" },
+      { title:"首页 - DeFi",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/DeFi" },
+      { title:"首页 - Layer2",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/Layer2" },
+      { title:"首页 - NFT",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/NFT" },
+      { title:"首页 - DAO",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/DAO" },
+      { title:"首页 - 百科",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-shou-ye",
+        source:[ "/" ],
+        target:"/jinse/timeline/百科" },
+      { title:"快讯 - 全部",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-kuai-xun",
+        source:[ "/lives" ],
+        target:"/jinse/lives/0" },
+      { title:"快讯 - 精选",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-kuai-xun",
+        source:[ "/lives" ],
+        target:"/jinse/lives/1" },
+      { title:"快讯 - 政策",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-kuai-xun",
+        source:[ "/lives" ],
+        target:"/jinse/lives/2" },
+      { title:"快讯 - 数据",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-kuai-xun",
+        source:[ "/lives" ],
+        target:"/jinse/lives/3" },
+      { title:"快讯 - NFT",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-kuai-xun",
+        source:[ "/lives" ],
+        target:"/jinse/lives/4" },
+      { title:"快讯 - 项目",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-kuai-xun",
+        source:[ "/lives" ],
+        target:"/jinse/lives/5" },
+      { title:"分类 - 政策",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/zhengce" },
+      { title:"分类 - 行情",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/fenxishishuo" },
+      { title:"分类 - DeFi",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/defi" },
+      { title:"分类 - 矿业",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/kuang" },
+      { title:"分类 - 以太坊 2.0",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/以太坊2.0" },
+      { title:"分类 - 产业",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/industry" },
+      { title:"分类 - IPFS",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/IPFS" },
+      { title:"分类 - 技术",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/tech" },
+      { title:"分类 - 百科",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/baike" },
+      { title:"分类 - 研报",
+        docs:"https://docs.rsshub.app/routes/finance#jin-se-cai-jing-fen-lei",
+        source:[ "/" ],
+        target:"/jinse/capitalmarket" } ] },
   "jisilu.cn":{ _name:"集思录",
     ".":[ { title:"广场",
         docs:"https://docs.rsshub.app/routes/bbs#ji-si-lu-guang-chang",
@@ -10041,6 +10177,11 @@
         docs:"https://docs.rsshub.app/routes/traditional-media#gong-tong-wang-zui-xin-bao-dao",
         source:"/news/:keyword",
         target:"/kyodonews/tchina/:keyword?" } ] },
+  "laimanhua8.com":{ _name:"来漫画",
+    www:[ { title:"漫画列表",
+        docs:"https://docs.rsshub.app/routes/anime#lai-man-hua",
+        source:"/kanmanhua/:id",
+        target:"/laimanhua/:id" } ] },
   "lang.live":{ _name:"浪 Play 直播",
     ".":[ { title:"直播间开播",
         docs:"https://docs.rsshub.app/routes/live#lang-play-yuan-zhi-bo",
@@ -10776,7 +10917,14 @@
         source:"/:location/news",
         target:"/mihoyo/sr/:location" } ] },
   "mihoyo.com":{ _name:"米哈游",
-    bbs:[ { title:"米游社 - 同人榜",
+    bbs:[ { title:"米游社 - 用户关注",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/accountCenter/postList",
+        target:(params, url) => {
+            const uid = new URL(url).searchParams.get('id');
+            return `/mihoyo/bbs/follow-list/${uid}`;
+        } },
+      { title:"米游社 - 同人榜",
         docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
         source:"/:game/imgRanking/:forum_id/:ranking_id/:cate_id",
         target:"/mihoyo/bbs/img-ranking/:game" },
@@ -10789,24 +10937,31 @@
           "/:game/home/53",
           "/:game/home/58" ],
         target:(params, url) => {
-                    const GITS_MAP = {
-                        bh3: 1, // '崩坏三',
-                        ys: 2, // '原神',
-                        bh2: 3, // '崩坏二',
-                        wd: 4, // '未定事件簿',
-                        sr: 6, // '崩坏：星穹铁道',
-                        zzz: 8, // '绝区零'
-                    };
-                    const { game } = params;
-                    const gids = GITS_MAP[game];
-                    if (!gids) {
-                        return '';
-                    }
-                    const type = new URL(url).searchParams.get('type') || '1';
-                    const page_size = '20';
-                    const last_id = '';
-                    return `/mihoyo/bbs/official/${gids}/${type}/${page_size}/${last_id}`;
-                } } ],
+            const GITS_MAP = {
+                bh3: 1, // '崩坏三',
+                ys: 2, // '原神',
+                bh2: 3, // '崩坏二',
+                wd: 4, // '未定事件簿',
+                sr: 6, // '崩坏：星穹铁道',
+                zzz: 8, // '绝区零'
+            };
+            const { game } = params;
+            const gids = GITS_MAP[game];
+            if (!gids) {
+                return '';
+            }
+            const type = new URL(url).searchParams.get('type') || '1';
+            const page_size = '20';
+            const last_id = '';
+            return `/mihoyo/bbs/official/${gids}/${type}/${page_size}/${last_id}`;
+        } },
+      { title:"米游社 - 用户帖子",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/accountCenter/postList",
+        target:(params, url) => {
+            const uid = new URL(url).searchParams.get('id');
+            return `/mihoyo/bbs/user-post/${uid}`;
+        } } ],
     sr:[ { title:"崩坏：星穹铁道 - 新闻",
         docs:"https://docs.rsshub.app/routes/game##mi-ha-you",
         source:"/news",
@@ -10815,6 +10970,52 @@
         docs:"https://docs.rsshub.app/routes/game##mi-ha-you",
         source:"/:location/news/:category",
         target:"/mihoyo/ys/:location/:category" } ] },
+  "miyoushe.com":{ _name:"米游社",
+    ".":[ { title:"米游社 - 用户关注",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/accountCenter/postList",
+        target:(params, url) => {
+            const uid = new URL(url).searchParams.get('id');
+            return `/mihoyo/bbs/follow-list/${uid}`;
+        } },
+      { title:"米游社 - 同人榜",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/imgRanking/:forum_id/:ranking_id/:cate_id",
+        target:"/mihoyo/bbs/img-ranking/:game" },
+      { title:"米游社 - 官方公告",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:[ "/:game/home/28",
+          "/:game/home/6",
+          "/:game/home/31",
+          "/:game/home/33",
+          "/:game/home/53",
+          "/:game/home/58" ],
+        target:(params, url) => {
+            const GITS_MAP = {
+                bh3: 1, // '崩坏三',
+                ys: 2, // '原神',
+                bh2: 3, // '崩坏二',
+                wd: 4, // '未定事件簿',
+                sr: 6, // '崩坏：星穹铁道',
+                zzz: 8, // '绝区零'
+            };
+            const { game } = params;
+            const gids = GITS_MAP[game];
+            if (!gids) {
+                return '';
+            }
+            const type = new URL(url).searchParams.get('type') || '1';
+            const page_size = '20';
+            const last_id = '';
+            return `/mihoyo/bbs/official/${gids}/${type}/${page_size}/${last_id}`;
+        } },
+      { title:"米游社 - 用户帖子",
+        docs:"https://docs.rsshub.app/routes/game#mi-ha-you",
+        source:"/:game/accountCenter/postList",
+        target:(params, url) => {
+            const uid = new URL(url).searchParams.get('id');
+            return `/mihoyo/bbs/user-post/${uid}`;
+        } } ] },
   "mindmeister.com":{ _name:"MindMeister",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/routes/study#mindmeister",
