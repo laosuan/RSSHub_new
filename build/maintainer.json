@@ -1258,6 +1258,9 @@
     "/chinaisa/:id?": [
         "nczitzk"
     ],
+    "/chinamoney/:channelId?": [
+        "TonyRL"
+    ],
     "/chinanews": [
         "yuxinliu-alex"
     ],
@@ -1525,7 +1528,12 @@
     "/crossbell/notes/source/:source": [
         "DIYgod"
     ],
-    "/cs/news/:caty": [],
+    "/cs/:category?": [
+        "nczitzk"
+    ],
+    "/cs/zzkx": [
+        "nczitzk"
+    ],
     "/csdn/blog": [
         "Jkker"
     ],
@@ -4444,6 +4452,9 @@
     "/mihoyo/bbs/official/:gids/:type?/:page_size?/:last_id?": [
         "CaoMeiYouRen"
     ],
+    "/mihoyo/bbs/timeline": [
+        "CaoMeiYouRen"
+    ],
     "/mihoyo/bbs/user-post/:uid": [
         "CaoMeiYouRen"
     ],
@@ -7210,6 +7221,9 @@
     "/wizfile/updates": [
         "Fatpandac"
     ],
+    "/wmc-bj/publish/:category?": [
+        "nczitzk"
+    ],
     "/wnacg": [
         "KenMizz"
     ],
@@ -7697,7 +7711,7 @@
     "/zhihu/timeline": [
         "SeanChao"
     ],
-    "/zhihu/topic/:topicId": [
+    "/zhihu/topic/:topicId/:isTop?": [
         "xyqfer"
     ],
     "/zhihu/weekly": [
