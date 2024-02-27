@@ -4136,6 +4136,9 @@
     "/laimanhua/:id": [
         "TonyRL"
     ],
+    "/lala": [
+        "cnkmmk"
+    ],
     "/lang/live/room/:id": [
         "MittWillson"
     ],
@@ -4395,6 +4398,12 @@
         "Kiotlin"
     ],
     "/lyu/news/:type": [],
+    "/m4/mil/:category?": [
+        "nczitzk"
+    ],
+    "/m4/news/:category?": [
+        "nczitzk"
+    ],
     "/macfilos/blog": [
         "nczitzk"
     ],
@@ -5284,7 +5293,6 @@
         "Maecenas",
         "nczitzk"
     ],
-    "/pcr/news": [],
     "/pcr/news-cn": [],
     "/pcr/news-tw": [],
     "/pediy/topic/:category?/:type?": [],
@@ -5488,6 +5496,9 @@
         "nczitzk"
     ],
     "/potplayer/update/:language?": [],
+    "/priconne-redive/news": [
+        "SayaSS"
+    ],
     "/producthunt/today": [
         "miaoyafeng",
         "Fatpandac"
@@ -6034,6 +6045,9 @@
     "/shiep/:type/:id?": [
         "gumibea",
         "TeamSUEP"
+    ],
+    "/shisu/news/:category": [
+        "Duuckjing"
     ],
     "/shmeea/:id?": [
         "jialinghui",
@@ -6908,8 +6922,12 @@
     "/typora/changelog/dev": [
         "nczitzk"
     ],
-    "/u3c3/:type?/:keyword?": [
-        "noname1897"
+    "/u3c3/:type?/:preview?": [
+        "noname1897",
+        "storytellerF"
+    ],
+    "/u3c3/search/:keyword/:preview?": [
+        "storytellerF"
     ],
     "/u9a9/:preview?": [
         "TonyRL"
@@ -6990,6 +7008,9 @@
         "DIYgod"
     ],
     "/unit-image/films/:type?": [],
+    "/unraid/community-apps": [
+        "KTachibanaM"
+    ],
     "/unusualwhales/news": [
         "TonyRL"
     ],
